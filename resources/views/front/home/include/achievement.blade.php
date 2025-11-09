@@ -4,8 +4,8 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 text-center wow fadeIn" data-wow-delay="300ms">
                 <div class="main-title mb-md-5 wow fadeIn" data-wow-delay="300ms">
-                    <h5> {{$achievement_title->heading}} </h5>
-                    <h2> {{$achievement_title->name}} </h2>
+                    <h5> {{$achievement_title->heading ?? ''}} </h5>
+                    <h2> {{$achievement_title->name ?? ''}} </h2>
                 </div>
             </div>
         </div>

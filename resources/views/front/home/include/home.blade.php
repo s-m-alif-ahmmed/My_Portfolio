@@ -8,10 +8,10 @@
             <div class="col-lg-12 text-center center-col">
                 <div class="personal-box">
                     <div class="myphoto">
-                        <img src="{{asset($home->home_profile_photo)}}" class="w-100" alt="image">
+                        <img src="{{asset($home->home_profile_photo ?? '')}}" class="w-100" alt="image">
                     </div>
                     <div class="color-white">
-                        <h2>{{$home->full_name}}</h2>
+                        <h2>{{$home->full_name ?? ''}}</h2>
                         <h3 id="personal"></h3>
                     </div>
                 </div>

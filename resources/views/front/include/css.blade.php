@@ -1,5 +1,5 @@
 <!-- Favicon -->
-<link rel="icon" type="image/png"  href="{{ $favicon->image }} ">
+<link rel="icon" type="image/png"  href="{{ $favicon->image ?? '' }} ">
 
 <!-- Bundle -->
 <link rel="stylesheet" href="{{asset('/')}}front/vendor/css/bundle.min.css">

@@ -1,7 +1,7 @@
 @extends('front.master')
 
 @section('title')
-    {{$favicon->title}}
+    {{$favicon->title ?? ''}}
 @endsection
 
 @section('content')

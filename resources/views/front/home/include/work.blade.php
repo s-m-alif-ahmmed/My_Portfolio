@@ -4,9 +4,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="main-title mb-2rem wow fadeIn" data-wow-delay="300ms">
-                    <h5> {{ $content->heading }} </h5>
-                    <h2> {{ $content->name }} </h2>
-                    <p> {{ $content->description }} </p>
+                    <h5> {{ $content->heading ?? '' }} </h5>
+                    <h2> {{ $content->name ?? '' }} </h2>
+                    <p> {{ $content->description ?? '' }} </p>
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@
         </span>
                 @foreach($categories as $category)
                     <span class="{{ request('category_id') == $category->id ? 'active' : '' }}">
-                <a href="{{ route('home', ['category_id' => $category->id]) }}" class="text-black">{{ $category->name }}</a>
+                <a href="{{ route('home', ['category_id' => $category->id]) }}" class="text-black">{{ $category->name ?? '' }}</a>
             </span>
                 @endforeach
             </div>

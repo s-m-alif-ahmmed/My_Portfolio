@@ -5,19 +5,19 @@
             <div class="col-lg-12 col-md-12 col-sm-12 mb-5 wow fadeInUp" data-wow-delay="400ms">
                 <div class="contact-box-shadow">
                     <div class="text-left sm-text-center text-center w-100">
-                        <h2 class="color-black font-weight-normal mb-2rem"> {{$head->name}} </h2>
+                        <h2 class="color-black font-weight-normal mb-2rem"> {{$head->name ?? ''}} </h2>
                         <p class="contact-para-setting mx-auto">
-                            {{$head->description}}
+                            {{$head->description ?? ''}}
                         </p>
                     </div>
                     <div class="contact-info pt-5">
                         <div class="icon-box">
                             <i class="fa fa-mobile color-summer-sky"></i>
-                            <p class="color-grey"> {{$address->number}} </p>
+                            <p class="color-grey"> {{$address->number ?? ''}} </p>
                         </div>
                         <div class="icon-box">
                             <i class="fa fa-envelope color-summer-sky"></i>
-                            <p> <a href="mailto:email@website.com" class="color-grey"> {{$address->email}} </a></p>
+                            <p> <a href="mailto:email@website.com" class="color-grey"> {{$address->email ?? ''}} </a></p>
                         </div>
 {{--                        <div class="icon-box">--}}
 {{--                            <i class="fa fa-server color-summer-sky"></i>--}}
@@ -26,7 +26,7 @@
 
                         <div class="icon-box">
                             <i class="fa fa-map-marker color-summer-sky"></i>
-                            <p class="color-grey"> {{$address->address}} </p>
+                            <p class="color-grey"> {{$address->address ?? ''}} </p>
                         </div>
                     </div>
                 </div>
@@ -43,9 +43,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="main-title wow fadeIn" data-wow-delay="300ms">
-                    <h5> {{$top->heading}} </h5>
-                    <h2> {{$top->name}} </h2>
-                    <p> {{$top->description}} </p>
+                    <h5> {{$top->heading ?? ''}} </h5>
+                    <h2> {{$top->name ?? ''}} </h2>
+                    <p> {{$top->description ?? ''}} </p>
                 </div>
             </div>
         </div>

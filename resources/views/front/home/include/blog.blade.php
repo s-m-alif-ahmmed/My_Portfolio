@@ -4,9 +4,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="main-title wow fadeIn" data-wow-delay="300ms">
-                    <h5> {{ $header->heading }} </h5>
-                    <h2> {{ $header->name }} </h2>
-                    <p> {{ $header->description }} </p>
+                    <h5> {{ $header->heading ?? '' }} </h5>
+                    <h2> {{ $header->name ?? '' }} </h2>
+                    <p> {{ $header->description ?? '' }} </p>
                 </div>
             </div>
         </div>

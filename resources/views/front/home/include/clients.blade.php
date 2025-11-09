@@ -4,8 +4,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 text-center wow fadeInLeft">
-                    <p class="mb-10px font-18 font-weight-normal color-summer-sky">{{ $client->heading }}</p>
-                    <h2 class="color-black mb-25px font-weight-light line-height-normal"> {{ $client->name }} </h2>
+                    <p class="mb-10px font-18 font-weight-normal color-summer-sky">{{ $client->heading ?? '' }}</p>
+                    <h2 class="color-black mb-25px font-weight-light line-height-normal"> {{ $client->name ?? '' }} </h2>
                 </div>
             </div>
 

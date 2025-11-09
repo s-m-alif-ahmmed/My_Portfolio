@@ -13,8 +13,11 @@
                     </li>
                     @endforeach
                 </ul>
-                @if($copyright->status == 'show')
-                <p class="copyrights mt-2 mb-2">&copy;copyright 2023 Made with love by <a href="https://www.smalifahmmed.com" target="_blank">S M Alif Ahmmed.</a></p>
+                @if($copyright)
+                    @if($copyright->status == 'show')
+                        <p class="copyrights mt-2 mb-2">&copy;copyright 2023 Made with love by <a href="https://www.smalifahmmed.com" target="_blank">S M Alif Ahmmed.</a></p>
+                    @else
+                    @endif
                 @else
                 @endif
             </div>

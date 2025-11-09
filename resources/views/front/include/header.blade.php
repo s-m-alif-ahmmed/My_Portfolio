@@ -2,7 +2,7 @@
     <nav class="navbar navbar-top-default navbar-expand-lg static-nav black nav-radius transparent-bg bottom-nav box-nav not-full no-animation">
         <div class="container radius nav-box-shadow">
             <a class="logo link" href="javascript:void(0)">
-                <img src="{{asset($logo->image)}}" alt="S M Alif Ahmmed" title="S M Alif Ahmmed">
+                <img src="{{asset($logo->image ?? '')}}" alt="S M Alif Ahmmed" title="S M Alif Ahmmed">
             </a>
             <div class="collapse navbar-collapse d-none d-lg-block">
                 <ul class="nav navbar-nav ml-auto">
@@ -61,8 +61,11 @@
                     </li>
                     @endforeach
                 </ul>
-                @if($copyright->status == 'show')
-                <p class="text-white">&copy; 2023 Qbit tech. Made With Love by S M Alif Ahmmed. </p>
+                @if($copyright)
+                    @if($copyright->status == 'show')
+                        <p class="text-white">&copy; 2023 Qbit tech. Made With Love by S M Alif Ahmmed. </p>
+                    @else
+                    @endif
                 @else
                 @endif
             </div>
